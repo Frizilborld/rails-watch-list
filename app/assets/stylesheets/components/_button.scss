@@ -1,4 +1,7 @@
 .btn-text-black {
   color: rgb(241, 241, 235);
   border-radius: 50px;
+  &:hover {
+    color: red;
+  }
 }
