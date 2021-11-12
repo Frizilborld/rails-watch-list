@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # GET "lists/new" -- new list
   # POST "lists" -- create list
   root to: 'lists#index'
-  resources :lists, only: [:show, :new, :create] do
+  resources :lists, only: [:show, :new, :create, :destroy, :index] do
     resources :bookmarks, only: [:new, :create]
   end
   resources :bookmarks, only: :destroy
