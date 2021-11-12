@@ -1,0 +1,31 @@
+
+<div>
+  <div class="banner" style="background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.7)), url(https://cdni.rbth.com/rbthmedia/images/2020.03/original/5e5f669c15e9f9792e030e47.jpg);">
+  <div class="container">
+    <h1>My Watch List Bro <strong>Easy</strong> to <strong>use</strong>!</h1>
+    <p>Now just try it!</p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+</div>
+
+<div class="container-card">
+  <% @lists.each do |list| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://ridzeal.com/wp-content/uploads/2021/08/summer-movies-2021-new-e1620919489437.jpg)">
+     <%= link_to list.name, list_path(list)  %>
+      </div>
+    <% end %>
+</div>
+  <br>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made by Hachem Rayane <i class="fas fa-heart"></i>
+  </div>
+</div>

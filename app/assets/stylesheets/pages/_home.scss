@@ -1,0 +1,11 @@
+// Specific CSS for your home-page
+.container {
+  h1, p, a {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+  a {
+    display: block;
+  }
+}
